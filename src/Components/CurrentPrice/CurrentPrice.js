@@ -34,13 +34,16 @@ function CurrentPrice() {
     name: "Last Week",
     id: 1,
   });
+  const [lineChartData, setLineChartData] = useState([]);
+
   useEffect(() => {
     CurrentPriceService.getSelectedCoinPrice(1)
       .then((response) => {
         let {
+          data,
           data: { bpi },
         } = response;
-        setAllBitCoinsDetails(bpi);
+        setAllBitCoinsDetails(data);
         setSelectCoinData(bpi[selectedCoin.value]);
       })
       .catch((error) => {
@@ -48,22 +51,46 @@ function CurrentPrice() {
       });
   }, []);
 
+  useEffect(() => {
+    CurrentPriceService.getSelectedCoinLineChart(selectFilterOption)
+      .then((response) => {
+        let {
+          data: { bpi },
+        } = response;
+        setLineChartData(bpi);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, [selectFilterOption]);
+
   const onChangeBitCoin = (e) => {
     const {
       target: { value },
     } = e;
 
-    setSelectCoinData(allBitCoinsDetails[value]);
+    setSelectCoinData(allBitCoinsDetails.bpi[value]);
     setSelectedCoin(e.target);
   };
 
   const onFilterChange = (changedvalue) => {
-    console.log(changedvalue, "changedvalue");
+    setSelectFilterOption(changedvalue);
   };
 
   return (
     <Fragment>
-      <section className="coin-name">{selectedCoin.value}</section>
+      <section className="coin-name">
+        <div className="coin-details">
+          <span>{selectedCoin.value}</span>
+          <span className="coin-iso">{selectedCoin.value}</span>
+        </div>
+        <div className="last-update-info">
+          <span className="last-udpate-title color-primary">Last Update:</span>
+          <span className="last-updated">
+            {new Date(allBitCoinsDetails?.time?.updated).toLocaleDateString()}
+          </span>
+        </div>
+      </section>
       <section className="coin__info">
         <div className="coin-info__list">
           <div className="coin-info-title">Price</div>
@@ -107,7 +134,7 @@ function CurrentPrice() {
             onChange={onFilterChange}
           />
         </section>
-        <LineCharts />
+        <LineCharts lineChartData={lineChartData} />
       </section>
     </Fragment>
   );
