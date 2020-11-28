@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import "./ChartFilters.css";
 
 function ChartFilters({ selectOption, filterList, onChange }) {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -21,6 +22,7 @@ function ChartFilters({ selectOption, filterList, onChange }) {
 
   return (
     <div className="chart-filters">
+      <div className="chart-filters-heading">Historical Data</div>
       <Button
         variant="contained"
         color="primary"

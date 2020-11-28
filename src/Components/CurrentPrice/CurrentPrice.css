@@ -10,12 +10,14 @@
   padding: 0.7rem;
   flex: 1;
 }
+
 .coin-info__list {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 3px;
   color: gray;
 }
+
 .coin-info__list .coin-info-title {
   font-size: 1rem;
   font-weight: 500;
@@ -23,12 +25,14 @@
   padding-bottom: 10px;
   text-transform: uppercase;
 }
+
 .coin-dropdown {
   width: auto;
   flex: 1;
   background: lavender;
   text-align: center;
 }
+
 .coin-dropdown .coin-select {
   width: 100%;
   height: 100%;
@@ -47,6 +51,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .coin-chart > div {
   min-width: 90%;
   width: 90%;
@@ -57,7 +62,6 @@
 .coin-chart .coin-filter {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .coin-name {
@@ -65,5 +69,28 @@
   font-weight: 600;
   letter-spacing: 2px;
   margin: 1rem 0rem;
+  color: #3f51b5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coin-name .last-update-info .last-updated {
+  background: green;
+  padding: 2px;
+  border: 2px solid green;
+  color: white;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+.coin-iso,
+.last-udpate-title {
+  opacity: 0.5;
+  padding-left: 4px;
+  font-size: 1rem;
   color: gray;
+}
+
+.color-primary {
+  color: #3f51b5;
 }

@@ -1,0 +1,26 @@
+@media only screen and (max-width: 736px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 562px) {
+  .container {
+    width: 90% !important;
+  }
+  .coin__info {
+    flex-direction: column;
+  }
+  .coin-name {
+    flex-direction: column;
+  }
+  .last-update-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .last-udpate-title {
+    margin: 1rem 0rem;
+  }
+}

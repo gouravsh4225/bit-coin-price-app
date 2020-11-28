@@ -1,0 +1,13 @@
+.chart-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 10%);
+  margin: 0 auto;
+}
+
+.chart-filters .chart-filters-heading {
+  font-size: 1.2rem;
+  color: #3f51b5;
+  font-weight: 500;
+}
