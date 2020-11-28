@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/bit-coin-price-app/static/css/main.432862ed.chunk.css",
-    "main.js": "/bit-coin-price-app/static/js/main.2912edb1.chunk.js",
-    "main.js.map": "/bit-coin-price-app/static/js/main.2912edb1.chunk.js.map",
+    "main.css": "/bit-coin-price-app/static/css/main.ce593400.chunk.css",
+    "main.js": "/bit-coin-price-app/static/js/main.1c84919b.chunk.js",
+    "main.js.map": "/bit-coin-price-app/static/js/main.1c84919b.chunk.js.map",
     "runtime-main.js": "/bit-coin-price-app/static/js/runtime-main.755a1356.js",
     "runtime-main.js.map": "/bit-coin-price-app/static/js/runtime-main.755a1356.js.map",
-    "static/js/2.516f6b7e.chunk.js": "/bit-coin-price-app/static/js/2.516f6b7e.chunk.js",
-    "static/js/2.516f6b7e.chunk.js.map": "/bit-coin-price-app/static/js/2.516f6b7e.chunk.js.map",
+    "static/js/2.ca8085b9.chunk.js": "/bit-coin-price-app/static/js/2.ca8085b9.chunk.js",
+    "static/js/2.ca8085b9.chunk.js.map": "/bit-coin-price-app/static/js/2.ca8085b9.chunk.js.map",
     "index.html": "/bit-coin-price-app/index.html",
-    "static/css/main.432862ed.chunk.css.map": "/bit-coin-price-app/static/css/main.432862ed.chunk.css.map",
-    "static/js/2.516f6b7e.chunk.js.LICENSE.txt": "/bit-coin-price-app/static/js/2.516f6b7e.chunk.js.LICENSE.txt"
+    "static/css/main.ce593400.chunk.css.map": "/bit-coin-price-app/static/css/main.ce593400.chunk.css.map",
+    "static/js/2.ca8085b9.chunk.js.LICENSE.txt": "/bit-coin-price-app/static/js/2.ca8085b9.chunk.js.LICENSE.txt",
+    "static/media/medium.019185aa.png": "/bit-coin-price-app/static/media/medium.019185aa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.755a1356.js",
-    "static/js/2.516f6b7e.chunk.js",
-    "static/css/main.432862ed.chunk.css",
-    "static/js/main.2912edb1.chunk.js"
+    "static/js/2.ca8085b9.chunk.js",
+    "static/css/main.ce593400.chunk.css",
+    "static/js/main.1c84919b.chunk.js"
   ]
 }
